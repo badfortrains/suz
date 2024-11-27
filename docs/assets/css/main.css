@@ -1,0 +1,35 @@
+/* Make sure the body and html take full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the background image to cover the full page */
+body {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('/suz/docs/assets/hotdog.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: white; /* Text color */
+}
+
+/* Center the text in the middle */
+.overlay h1 {
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Optional shadow for better text visibility */
+    margin: 0;
+}
+
+.name {
+    position: absolute;
+    top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 4px;
+}
