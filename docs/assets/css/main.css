@@ -7,7 +7,11 @@ html, body {
 
 /* Set the background image to cover the full page */
 body {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('/suz/docs/assets/hotdog.webp');
+    background-color: #171010;
+}
+
+.container {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('/docs/assets/hotdog.webp');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -15,6 +19,8 @@ body {
     align-items: center;
     font-family: Arial, sans-serif;
     color: white; /* Text color */
+    height: 100%;
+    padding: 0px 20px;
 }
 
 /* Center the text in the middle */
@@ -27,9 +33,18 @@ body {
 
 .name {
     position: absolute;
-    top: 20px;
+    bottom: 0px;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-size: 24px;
     letter-spacing: 4px;
+    width: 100%;
+    text-align: center;
+    line-height: 89px;
+}
+
+@media (max-aspect-ratio: 3/5) {
+    .container {
+        height: calc(100% - 89px); /* Adjust height to take up the full screen minus 100px */
+    }
 }
